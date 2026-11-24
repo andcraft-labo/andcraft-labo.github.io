@@ -273,7 +273,7 @@ section{padding:104px 0;position:relative}
 .who{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 26px;position:relative}
 .who a{display:inline-flex;align-items:center;min-height:40px;border:1.5px solid rgba(255,255,255,.7);border-radius:999px;padding:6px 16px;font-weight:900;font-size:13.5px;text-decoration:none;transition:background .2s,color .2s}
 .who a:hover{background:#fff;color:var(--org)}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:12px;position:relative;max-width:760px}
+.contact{display:grid;grid-template-columns:1fr;gap:12px;position:relative;max-width:440px}
 @media(max-width:640px){.contact{grid-template-columns:1fr}}
 .cbox{background:#141414;border-radius:var(--radius);transition:transform .2s,background .2s;position:relative}
 .cbox:hover{transform:translateY(-3px);background:#000}
@@ -290,11 +290,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
 footer .en{color:#fff;font-size:15px}
 
 /* sticky bar（スマホ）／ トップへ（PC） */
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(16,16,18,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .3s var(--ease)}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(16,16,18,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .3s var(--ease)}
 .sticky.show{transform:none}
 .sticky a{display:flex;align-items:center;justify-content:center;gap:6px;min-height:48px;text-decoration:none;font-weight:900;font-size:15px;border-radius:var(--radius)}
-.sticky .s-tel{background:var(--org);color:#fff}
-.sticky .s-mail{border:1.5px solid #4a4a50;color:#fff}
+.sticky .s-mail{background:var(--org);color:#fff}
 #topBtn{position:fixed;right:16px;bottom:16px;z-index:60;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:#fff;box-shadow:0 10px 24px rgba(0,0,0,.4);cursor:pointer;font-size:18px;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .3s,transform .3s,visibility .3s,background .2s}
 #topBtn.show{opacity:.92;visibility:visible;transform:none}
 #topBtn:hover{opacity:1;background:var(--org)}
@@ -501,7 +500,7 @@ html{scroll-behavior:auto}
 <h2>まずは、倉庫を<br>見に来てください。</h2>
 <p>何もない空間を一緒に見て、「ここで何ができるか」を話しましょう。</p>
 <ol class="flow" aria-label="見学までの流れ">
-<li><span class="en">1</span>電話かメール</li><li class="sep" aria-hidden="true">→</li>
+<li><span class="en">1</span>メールで連絡</li><li class="sep" aria-hidden="true">→</li>
 <li><span class="en">2</span>日程を決める</li><li class="sep" aria-hidden="true">→</li>
 <li><span class="en">3</span>倉庫で話す</li>
 </ol>
@@ -514,10 +513,9 @@ html{scroll-behavior:auto}
 <a href="mailto:info@andcraft.net" data-subject="話だけ聞きたい">話だけ聞きたい</a>
 </div>
 <div class="contact">
-<div class="cbox"><a href="tel:09056249904"><small>PHONE — 代表 葛西祐弥</small><span class="big">090-5624-9904</span></a></div>
-<div class="cbox has-btn"><a href="mailto:info@andcraft.net" data-subject="倉庫の見学について"><small>MAIL</small><span class="big">info@andcraft.net</span></a><button class="copy-btn" id="copyMail" type="button">アドレスをコピー</button></div>
+<div class="cbox has-btn"><a href="mailto:info@andcraft.net" data-subject="倉庫の見学について"><small>MAIL — 代表 葛西祐弥</small><span class="big">info@andcraft.net</span></a><button class="copy-btn" id="copyMail" type="button">アドレスをコピー</button></div>
 </div>
-<p class="from">アンドクラフト株式会社　代表 葛西 祐弥 ／ LINE公式アカウントは準備中 — まずは電話かメールでどうぞ。</p>
+<p class="from">アンドクラフト株式会社　代表 葛西 祐弥 ／ LINE公式アカウントは準備中 — まずはメールでどうぞ。</p>
 </div>
 </div>
 </section>
@@ -531,8 +529,7 @@ html{scroll-behavior:auto}
 </footer>
 
 <nav class="sticky" id="sticky" aria-label="連絡">
-<a class="s-tel" href="tel:09056249904">☎ 電話する</a>
-<a class="s-mail" href="mailto:info@andcraft.net" data-subject="倉庫の見学について">✉ メールする</a>
+<a class="s-mail" href="mailto:info@andcraft.net" data-subject="倉庫の見学について">✉ メールで見学を申し込む</a>
 </nav>
 <button id="topBtn" type="button" aria-label="トップへ戻る">↑</button>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
